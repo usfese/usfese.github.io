@@ -4,11 +4,19 @@
 	<title>自制网页</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css\main.css">
+	<script type="text/javascript">
+		function showDate () {
+			a=document.getElementById('dt');
+			a.innerHTML=Date();
+		}
+	</script>
 </head>
 <body>
 	<h1>自制网页</h1>
 	<hr>
 	<p>自制网页</p>
+	<p id="dt">点按钮显示日期</p>
+	<button onclick="showDate()">点我</button>
 	<p><a href="test\index.html">测试</a></p>
 	<p><a href="music\index.html">东音</a></p>
 </body>
