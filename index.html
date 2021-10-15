@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="icon" href="favicon.ico">
 	<title>自制网页</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css\main.css">
@@ -9,6 +10,34 @@
 			a=document.getElementById('dt');
 			a.innerHTML=Date();
 		}
+
+		function showSecret() {
+			var y = document.getElementById("secret");
+			var x = document.forms["password"]["pwd"].value;
+			document.write("js");
+			switch (x)
+			{
+				case "ph":
+				y.innerHTML="test/ph/index.html"
+				break;
+
+				case "yhdm":
+				window.location.href="www.imomoe.la/index.html";
+				break;
+
+				case "pvz":
+				y.innerHTML="http://pvz2.jspvz.com/download.htm";
+				break;
+
+				case "music":
+				y.innerHTML="music/index.html";
+				break;
+
+
+				default :
+				alert("没有此暗号");
+				break;			
+			}
 	</script>
 </head>
 <body>
@@ -19,5 +48,11 @@
 	<button onclick="showDate()">点我</button>
 	<p><a href="test\index.html">测试</a></p>
 	<p><a href="music\index.html">东音</a></p>
-</body>
+	<br><br>
+	<p>
+		<form name="password" onsubmit="" method="post">
+			暗号:<input type="password" name="pwd"><input type="submit" value="确定">
+		</form>
+	</p>
+	<p id="secret">.</p>
 </html>
