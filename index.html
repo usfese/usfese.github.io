@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css\main.css">
 	<script type="text/javascript">
-		function showDate () {
+		function showDate() {
 			a=document.getElementById('dt');
 			a.innerHTML=Date();
 		}
@@ -14,11 +14,10 @@
 		function showSecret() {
 			var y = document.getElementById("secret");
 			var x = document.forms["password"]["pwd"].value;
-			document.write("js");
 			switch (x)
 			{
 				case "ph":
-				y.innerHTML="test/ph/index.html"
+				window.location.href="test/ph/index.html"
 				break;
 
 				case "yhdm":
@@ -26,18 +25,22 @@
 				break;
 
 				case "pvz":
-				y.innerHTML="http://pvz2.jspvz.com/download.htm";
+				window.location.href="http://pvz2.jspvz.com/download.htm";
 				break;
 
 				case "music":
-				y.innerHTML="music/index.html";
+				window.location.href="music/index.html";
 				break;
+
+				case "?" :
+				y.innerHTML="???????????????";
 
 
 				default :
 				alert("没有此暗号");
 				break;			
 			}
+		}
 	</script>
 </head>
 <body>
@@ -50,7 +53,7 @@
 	<p><a href="music\index.html">东音</a></p>
 	<br><br>
 	<p>
-		<form name="password" onsubmit="showSecret()">
+		<form name="password" onsubmit="showSecret();return false">
 			暗号:<input type="password" name="pwd"><input type="submit" value="确定">
 		</form>
 	</p>
