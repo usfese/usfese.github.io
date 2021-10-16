@@ -4,50 +4,26 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<title>自制网页</title>
 	<meta charset="utf-8">
+	<meta name="author" content="usfese">
+	<meta name="keywords" content="usfese,touhou,东方,Github,github,東方,HTML">
 	<link rel="stylesheet" type="text/css" href="css\main.css">
-	<script type="text/javascript">
-		function showDate() {
-			a=document.getElementById('dt');
-			a.innerHTML=Date();
-		}
-
-		function showSecret() {
-			var y = document.getElementById("secret");
-			var x = document.forms["password"]["pwd"].value;
-			switch (x)
-			{
-				case "ph":
-				window.location.href="test/ph/index.html"
-				break;
-
-				case "yhdm":
-				window.location.href="www.imomoe.la/index.html";
-				break;
-
-				case "pvz":
-				window.location.href="http://pvz2.jspvz.com/download.htm";
-				break;
-
-				case "music":
-				window.location.href="music/index.html";
-				break;
-
-				case "?" :
-				y.innerHTML="???????????????";
-				break;
-
-
-				default :
-				alert("没有此暗号");
-				break;			
-			}
-		}
-	</script>
+	<script type="text/javascript" src="js\home.js"></script>
 </head>
 <body>
+
 	<h1>自制网页</h1>
 	<hr>
 	<p>自制网页</p>
+	<form name="search" onsubmit="searchEngine();return false">
+		<select name="engines">
+			<option value="http://www.baidu.com/s?wd=">百度</option>
+			<option value="http://www.google.com.hk/search?hl=zh-CN&source=hp&q=">谷歌</option>
+			<option value="http://cn.bing.com/search?q=">必应</option>
+			<option value="http://tieba.baidu.com/f?kw=">贴吧</option>
+		</select>
+		<input type="text" name="keyword">
+		<input type="submit" value="搜索">
+	</form>
 	<p id="dt">点按钮显示日期</p>
 	<button onclick="showDate()">点我</button>
 	<p><a href="test\index.html">测试</a></p>
@@ -59,4 +35,5 @@
 		</form>
 	</p>
 	<p id="secret">.</p>
+
 </html>
