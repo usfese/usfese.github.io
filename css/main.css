@@ -1,2 +1,33 @@
-h1 {background-color: green;color: red;text-align: center}
-#body {background-color: yellow}
+div.htitle{
+	background-color: green;
+	opacity: 0.6;
+}
+
+div.htitle h1 {
+	color: red;
+	text-align: center;
+}
+
+body {
+  background-color: black;
+}
+
+div.all {
+	background-image: url(../images/yukari1.jpg);
+}
+
+div.transbox {
+  width:1200px;
+  margin:10px 50px;
+  background-color:#ffffff;
+  border:1px solid black;
+  opacity:0.65;
+  filter:alpha(opacity=65); /* IE8 及更早版本 */
+}
+
+div.transbox p
+{
+  margin:30px 40px;
+  font-weight:bold;
+  color:#000000;
+}

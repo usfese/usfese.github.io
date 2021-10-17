@@ -1,8 +1,13 @@
+// home.js
+
+
+// 显示日期
 function showDate() {
 	var a=document.getElementById('dt');
 	a.innerHTML=Date();
 }
 
+// 对暗号
 function showSecret() {
 	var y = document.getElementById("secret");
 	var x = document.forms["password"]["pwd"].value;
@@ -35,9 +40,22 @@ function showSecret() {
 	}
 }
 
+// 搜索
 function searchEngine(){
 	var engine = document.forms["search"]["engines"].value;
 	var keyword = document.forms["search"]["keyword"].value;
 	var search = engine+keyword;
+	switch(engine){
+		case "https://thwiki.cc/%E7%89%B9%E6%AE%8A:%E6%90%9C%E7%B4%A2?search=":
+		search = search + "&go=前往";
+	}
 	window.location.href=search;
+}
+
+// 显示时间
+var myVar=setInterval(function(){myTimer()},1000);
+function myTimer(){
+	var d=new Date();
+	var t=d.toLocaleTimeString();
+	document.getElementById("clock").innerHTML=t;
 }
