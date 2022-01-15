@@ -19,17 +19,17 @@
 			<div class="htitle">
 				<h1>自制网页</h1>
 			</div>
-			<form name="password" onsubmit="showSecret();return false">
+			<form name="password" onsubmit="showSecret();return false;">
 				<div style="color:black;font-size: 100;">暗号:</div><input type="password" name="pwd"><input type="submit" value="确定">
 			</form>
+
 		</div>
 		<hr>
 		<div class="background">
 			<div class="transbox">
-				<p>自制网页
-					<audio src="music\hr01蓬莱人形\hr01_01蓬莱传说.mp3" loop="true" controls="" preload="none" autoplay="true"></audio>
-				</p>
-				<form name="search" onsubmit="searchEngine();return false">
+				<h3>自制网页</h3>
+				<audio src="music\hr01蓬莱人形\hr01_01蓬莱传说.mp3" loop="true" controls="" preload="none" autoplay="false"></audio>
+				<form name="search" onsubmit="searchEngine();return false;">
 					<select name="engines">
 						<option value="http://www.baidu.com/s?wd=">百度</option>
 						<option value="http://www.google.com.hk/search?hl=zh-CN&source=hp&q=">谷歌</option>
@@ -76,13 +76,19 @@
 					<div id="sec5" class="sec"></div>
 					<div id="sec6" class="sec"></div>
 				</div></td></tr></table></div>
-				<p id="clock"></p>
-				<p id="dt">点按钮显示日期</p>
-				<button onclick="showDate()">点我</button>
-				<p><a href="test\index.html">测试</a></p>
-				<p><a href="music\index.html">东音</a></p>
-				<br>
-				<p id="secret">.</p>
+				<p>
+					<p id="clock"></p>
+					<p id="dt">点按钮显示日期<button onclick="showDate();">点我</button></p>
+				</p>
+				<p><a href="test\index.html">测试&nbsp&nbsp</a><a href="music\index.html">东音</a></p>
+				<p id="secret"></p>
+				<p >
+					本网页是本人在github上发布的，供本人作个人笔记与网页技术练习之用。
+					<br>
+					使用了html,javascript,css,jQuery。
+					<br>
+					<s>这个github就是逊啦</s>
+				</p>
 			</div>
 		</div>
 	</div>

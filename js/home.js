@@ -7,6 +7,13 @@ function showDate() {
 	a.innerHTML=Date();
 }
 
+//站内搜索(百度)  废置
+// function search(){
+// 	var e = document.getElementById("search_in_site");
+// 	var x = document.forms["s"]["kwd"].value;
+// 	// window.location.href="http://www.baidu.com/s?wd=site:"+
+// }
+
 // 对暗号
 function showSecret() {
 	var y = document.getElementById("secret");
