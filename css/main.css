@@ -6,14 +6,15 @@ div.htitle{
 div.htitle h1 {
 	color: red;
 	text-align: center;
+  opacity: 1;
 }
 
 body {
   background-color: black;
 }
 
-div.all {
-	background-image: url(../images/yukari1.jpg);
+#all {
+/*	background-image: url(../images/yukari1.jpg);*/
 }
 
 div.transbox {
@@ -22,7 +23,6 @@ div.transbox {
   background-color:#ffffff;
   border:1px solid black;
   opacity:0.65;
-  filter:alpha(opacity=65); /* IE8 及更早版本 */
 }
 
 div.transbox p
@@ -30,4 +30,9 @@ div.transbox p
   margin:30px 40px;
   font-weight:bold;
   color:#000000;
+}
+
+#secret {
+  background-color: skyblue;
+  opacity: 0.6;
 }

@@ -33,9 +33,6 @@ function showSecret() {
 		y.innerHTML="???????????????";
 		break;
 
-		case "l2dgirl":
-		window.location.href="test/girl.html";
-		break;
 
 
 		default :

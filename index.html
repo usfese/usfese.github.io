@@ -8,25 +8,27 @@
 	<meta name="keywords" content="usfese,touhou,东方,Github,github,東方,HTML">
 	<link rel="stylesheet" type="text/css" href="css\main.css">
 	<link rel="stylesheet" type="text/css" href="css\clock.css">
-	<script type="text/javascript" src="js\home.js"></script>
+	<script src="js\home.js"></script>
 	<script src="js\jquery-3.6.0.min.js"></script>
-	<script type="text/javascript" src="js\clock.js"></script>
+	<script src="js\clock.js"></script>
+	<!-- <script src="js\image.js"></script> -->
 </head>
 <body>
-	<div class="all">
-		<div class="htitle">
-			<h1>自制网页</h1>
-		</div>
-
+	<div id="all">
 		<div id="secret">
+			<div class="htitle">
+				<h1>自制网页</h1>
+			</div>
 			<form name="password" onsubmit="showSecret();return false">
-				<div style="color:whitesmoke;">暗号:</div><input type="password" name="pwd"><input type="submit" value="确定">
+				<div style="color:black;font-size: 100;">暗号:</div><input type="password" name="pwd"><input type="submit" value="确定">
 			</form>
 		</div>
 		<hr>
 		<div class="background">
 			<div class="transbox">
-				<p>自制网页</p>
+				<p>自制网页
+					<audio src="music\hr01蓬莱人形\hr01_01蓬莱传说.mp3" loop="true" controls="" preload="none" autoplay="true"></audio>
+				</p>
 				<form name="search" onsubmit="searchEngine();return false">
 					<select name="engines">
 						<option value="http://www.baidu.com/s?wd=">百度</option>
