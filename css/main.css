@@ -10,7 +10,7 @@ div.htitle h1 {
 }
 
 body {
-  background-color: lightgray;
+  background-color: darkgray;
 }
 
 #all {
@@ -20,7 +20,7 @@ body {
 div.transbox {
   width:1200px;
   margin:10px 50px;
-  background-color:#ffffff;
+  background-color:lightgray;
   border:1px solid black;
   opacity:0.65;
 }
