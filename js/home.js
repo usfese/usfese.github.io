@@ -40,6 +40,13 @@ function showSecret() {
 		y.innerHTML="???????????????";
 		break;
 
+		case "jm" :
+		window.location.href="https://jmcomic.bet";
+		break;
+
+		case "zd" :
+		window.location.href="https://jmcomic4.cc";
+		break;
 
 
 		default :
