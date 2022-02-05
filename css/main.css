@@ -1,6 +1,6 @@
 div.htitle{
 	background-color: green;
-	opacity: 0.9;
+	opacity: 1;
 }
 
 div.htitle h1 {
@@ -10,7 +10,7 @@ div.htitle h1 {
 }
 
 body {
-  background-color: darkgray;
+  background-color: rgb(226, 196, 196);
 }
 
 #all {
