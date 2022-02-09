@@ -2,10 +2,15 @@
 <html>
 
 <head>
+	<link rel="shortcut icon" href="../favicon.ico">
 	<title>测试</title>
 	<meta charset="utf-8">
+	<meta name="author" content="usfese">
+	<meta name="keywords" content="usfese">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
-	<link rel="stylesheet" type="text/css" href="../css/gotocss.css">
+	<link rel="stylesheet" type="text/css" href="../css/clock.css">
+	<script src="../js/home.js"></script>
+	<script src="../js/jquery-3.6.0.min.js"></script>
 	<script src="../js/gototop.js"></script>
 	<script src="../js/wushiyintu.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
@@ -14,15 +19,46 @@
 </head>
 
 <body>
-	<p><a href="..\index.html">返回上一页</a></p>
+	<div id="all">
+		<div id="secret">
+			<div class="htitle">
+				<h1>动画站点</h1>
+			</div>
+				<form name="search" onsubmit="searchEngine();return false;">
+					<select name="engines">
+						<option value="http://www.baidu.com/s?wd=">百度</option>
+						<option value="http://www.google.com.hk/search?hl=zh-CN&source=hp&q=">谷歌</option>
+						<option value="http://cn.bing.com/search?q=">必应</option>
+						<option value="http://tieba.baidu.com/f?kw=">贴吧</option>
+						<option value="https://thwiki.cc/%E7%89%B9%E6%AE%8A:%E6%90%9C%E7%B4%A2?search=">THB</option>
+						<option value="https://wallhaven.cc/search?q=">Wallhaven</option>
+					</select>
+					<input type="text" name="keyword">
+					<input type="submit" value="搜索">
+				</form>
+		</div>
+		<hr>
+		<div class="background">
+			<div class="transbox">
+				<h3>动画站点</h3>
+				<p><p><a href="..\index.html">返回上一页</a></p>
 	<p>测试</p>
 	<p><audio src="https://upload.thwiki.cc/d/dc/hr01_01.mp3" loop="" controls="" preload="none"></audio></p>
 	<a
 		href="https://greasyfork.org/zh-CN/scripts/419215-%E8%87%AA%E5%8A%A8%E6%97%A0%E7%BC%9D%E7%BF%BB%E9%A1%B5">自动翻页</a>&nbsp&nbsp
 	<a href="websites_text.html">文本内容</a><br /><br />
 	<a href="http://dev.ayouth.xyz/ayouth/animation.html">动画站点</a>&nbsp&nbsp&nbsp<a href="anime_websites.html">文本内容</a> <br /><br />
-	<a href="../wushiyintu.jpeg">五十音图下载</a><button onclick="showPicture();">直接打开</button>
+	<a href="../wushiyintu.jpeg">五十音图</a><button onclick="showPicture();">直接打开</button>
 	<div id="pic1"></div>
+	磁力链接<a href="magnet:?xt=urn:btih:348f3c670b9bb5d0cb235c84ccf53409412ba471&dn=%5B%E9%A6%96%E5%8F%91%5D%5BPC%2F%E5%AE%89%E5%8D%93%2FONS%5D%5B%E5%90%88%E9%9B%86%5D%5B27.8GB%5D%E7%BE%8E%E5%B0%91%E5%A5%B3%E4%B8%87%E5%8D%8E%E9%95%9C1%2B2%2B2.5%2B3%2B4%2B5%E5%85%B1%E5%85%AD%E9%83%A8%E5%85%A8%E6%B1%89%E5%8C%96PC%2B%E5%AE%89%E5%8D%93%2BCG%2B%E5%8A%A8%E6%80%81CG&tr=http%3A%2F%2Fsukebei.tracker.wf%3A8888%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce">美少女万华镜汉化1-5 PC+安卓+CG 解压密码:nicemoe</a>
+</p><br /><br />
+			</div>
+		</div>
+	</div>
+
+
+
+	
 </body>
 
 </html>
