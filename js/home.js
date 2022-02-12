@@ -20,9 +20,6 @@ function showSecret() {
 	var x = document.forms["password"]["pwd"].value;
 	switch (x)
 	{
-		case "ph":
-		window.location.href="test/ph/index.html";
-		break;
 
 		case "yhdm":
 		window.location.href="www.imomoe.la/index.html";
